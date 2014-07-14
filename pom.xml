@@ -161,9 +161,6 @@
 								<goals>
 									<goal>compile</goal>
 								</goals>
-								<configuration>
-									<module>ie.brianhenry.gwtdropwizard.GwtDropwizard</module>
-								</configuration>
 							</execution>
 						</executions>
 					</plugin>
