@@ -57,7 +57,7 @@ public class GwtDropwizardClient implements EntryPoint {
 
 		// Create the popup dialog box
 		final DialogBox dialogBox = new DialogBox();
-		dialogBox.setText("Remote Procedure Call");
+		dialogBox.setText("Dropwizard");
 		dialogBox.setAnimationEnabled(true);
 		final Button closeButton = new Button("Close");
 		// We can set the id of a widget by accessing its Element
@@ -117,7 +117,7 @@ public class GwtDropwizardClient implements EntryPoint {
 				executeRequest(textToServer, new AsyncCallback<HelloWorld>() {
 					public void onFailure(Throwable caught) {
 						// Show the RPC error message to the user
-						dialogBox.setText("Remote Procedure Call - Failure");
+						dialogBox.setText("Dropwizard - Failure");
 						serverResponseLabel
 								.addStyleName("serverResponseLabelError");
 						serverResponseLabel.setHTML(SERVER_ERROR);
@@ -126,7 +126,7 @@ public class GwtDropwizardClient implements EntryPoint {
 					}
 
 					public void onSuccess(HelloWorld result) {
-						dialogBox.setText("Remote Procedure Call");
+						dialogBox.setText("Dropwizard");
 						serverResponseLabel
 								.removeStyleName("serverResponseLabelError");
 						serverResponseLabel.setHTML(result.getContent());
