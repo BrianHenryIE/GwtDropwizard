@@ -1,0 +1,37 @@
+*.class
+
+# Local Repo for stuff without a public Maven #
+lib/
+
+# Package Files #
+*.jar
+*.war
+
+# gwt caches and compiled units #
+war/gwt_bree/
+gwt-unitCache/
+
+# boilerplate generated classes #
+.apt_generated/
+
+# more caches and things from deploy #
+war/WEB-INF/deploy/
+war/WEB-INF/classes/
+src/main/resources/gwt/WEB-INF/
+src/main/resources/gwt/gwtdropwizard/
+
+#compilation logs
+.gwt/
+
+#caching for already compiled files
+gwt-unitCache/
+src/main/resources/gwt-unitCache/
+
+
+#gwt junit compilation files
+www-test/
+
+#old GWT (1.5) created this dir
+.gwt-tmp/
+/bin/
+/target/
